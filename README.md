@@ -24,9 +24,6 @@ Yes, the full leaderboard will be available on [EvalAI](https://eval.ai/web/chal
 ### Is there a deadline?
 The benchmark and its leaderboard can be submitted to indefinitely on EvalAI as a resource for the community. Phase 2 of the challenge, which rewards top entries with prizes, will end on April 3rd, 2022.
 
-### Is FALCON one benchmark or many benchmarks?
-NLB aims to regularly organize benchmark suites, a collection of tasks, datasets, and metrics around a theme in neural latent variable modeling. For example, NLB'21 will emphasize general population modeling.
-
 ## Citation
 If you use the FALCON in your work, please cite our preprint, which is not yet posted.
 
