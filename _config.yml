@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
-title: Neural Latents Benchmark
-description: A Benchmark for Models of Neural Data
+title: FALCON
+description: Few-shot Alignment for Consistent Neural decoding
 logo: logo.svg
-github_username: neurallatents
+github_username: snel-repo

@@ -3,33 +3,16 @@
 <!-- </div> -->
 ## Overview
 
-Advances in neural recording present increasing opportunities to study neural activity in unprecedented detail. Latent variable models (LVMs) are promising tools for analyzing this rich activity across diverse neural systems and behaviors, as LVMs do not depend on known relationships between the activity and external
-experimental variables. To coordinate LVM modeling efforts, we introduce the Neural Latents Benchmark (NLB). The first benchmark suite, *NLB 2021*, evaluates models on 7 datasets of neural spiking activity spanning 4 tasks and brain areas.
+Decoding user intention from neural data provides a potential avenue to restore independence and mobility to individuals with paralysis. Intracortical spiking activity recorded from brain-computer interfaces (BCI) in particular provides high quality signals for enabling such control. However, the decoders built on intracortical spiking activity will often fail when used in real-world settings due to the non-stationarity of the neural signals. This non-stationarity can be caused by a variety of factors, including changes in the neural recording environment, changes in the user's behavior, and changes in the user's neural signals. At a holistic level, these changes reflect in inconsistent decoding performance across days. Consequently, methods for adapting decoders to new days are critical for the real-world deployment of brain-computer interfaces.
 
- <!-- However, progress in latent variable modeling is currently impeded by a lack of standardization, resulting in methods being developed and compared in an ad hoc manner. -->
-<!-- Models should take multi-channel spiking activity as input and produce firing rate estimates as output. Rate estimates should then be submitted to the public challenge hosted on [EvalAI](https://eval.ai/).  -->
-While the benchmark will be available indefinitely, the challenge (phase 2) will close April 3, 2022. To get started with the challenge, follow the links on the left.
+We propose FALCON as a benchmark to standardize the evaluation of adaptation algorithms for intracortical BCI (iBCI). For 5 different decoding tasks spanning the current use of iBCIs, FALCON provides paired neural and behavioral data collected over an early period of experiments, and evaluates decoders on new days. In the BCI literature, these paired data would be termed "calibration" data as they are used to train decoders. Since decoding on new days is ill-posed without any data, but calibration data on new days should be minimized, we frame decoding on new days as a few-shot adaptation problem, and provide a greatly reduced amount of calibration data on new days.
 
-- [Read about NLB 2021 in our technical paper](http://arxiv.org/abs/2109.04463).
+We host a challenge to kickstart the FALCON benchmark, but the benchmark will be available indefinitely. To get started with the challenge, follow the links on the left.
+
+- [Read about FALCON in our technical paper](http://arxiv.org/abs/2109.04463).
 - [Join the mailing list for updates](https://forms.gle/o7BejfJ2S9hqJpM28).
-- [See our Cosyne '21 announcement](https://www.youtube.com/watch?v=o7dvFLHb5AY).
-- [Join our Slack workspace](https://neurallatents.slack.com). Please email `fpei6 [at] gatech [dot] edu` for an invite link.
-
-## NLB Virtual Workshop
-We hosted a virtual workshop on 2/27, and **all materials from the workshop are available [here](https://github.com/neurallatents/nlb_workshop)**. The workshop featured several presentations on the benchmark and on developing neural data models, including talks about:
-- Motivations behind the benchmark and how to participate
-- nlb-lightning, a PyTorch lightning framework to facilitate development for NLB 2021
-- Leading submissions and baselines, such as AESMTE3 (AEStudio), iLQR-VAE (Marine Schimel), and MINT (Sean Perkins)
-
-## NLB 2021, Phase 2: Calling all models!
-Phase 1 of our challenge was won by [AE Studio](https://ae.studio/); their writeup will be online shortly, but their [code is available here](https://github.com/agencyenterprise/ae-nlb-2021). Their team comprised Darin Erat Sleiter, Joshua Schoenfield, and Mike Vaiana; the team additionally thanks Sumner L Norman for his guidance and advice in the areas of neuroscience and neural decoding.
-
-The challenge continues into phase 2 with an update to the prizes:
-- **New Judge's choice prize**: We have revised the prize structure for Phase 2. In addition to the co-smoothing prizes for each dataset, we have added 3 prizes for models selected by an external panel of judges to promote qualitative interpretability and useability. The specific judging criteria will be posted in the [challenge info](/challenge).
-
-**Motivation**: The Neural Latents effort is unique among machine learning benchmarks in that the downstream use of these models clearly depends on more than the measured metrics. Therefore, we wish to allow for a more qualitative evaluation of each model for their relative merits, and encourage the submission of all models. For example, there is no consensus manner in which to measure model interpretability, but such interpretability is key when using LVMs to infer the computational function of the modeled activity. We want to discourage instances where developers keep potentially valuable models private because the model doesn't recapitulate the data as perfectly as a powerful black-box approach. One of our primary goals as a benchmark is to populate an "accuracy-interpretability" paretofront. Highlighting such a set of models would provide a variety of downstream users with the model best matched to their requirements, at all levels of analysis. The judge's choice prize is a first effort towards this concept.
-
----
+<!-- - [See our Cosyne '21 announcement](https://www.youtube.com/watch?v=o7dvFLHb5AY). -->
+<!-- - [Join our Slack workspace](https://neurallatents.slack.com). Please email `fpei6 [at] gatech [dot] edu` for an invite link. -->
 
 ## FAQ
 ### How do I submit a model to the benchmark?
@@ -41,20 +24,11 @@ Yes, the full leaderboard will be available on [EvalAI](https://eval.ai/web/chal
 ### Is there a deadline?
 The benchmark and its leaderboard can be submitted to indefinitely on EvalAI as a resource for the community. Phase 2 of the challenge, which rewards top entries with prizes, will end on April 3rd, 2022.
 
-### Is NLB one benchmark or many benchmarks?
+### Is FALCON one benchmark or many benchmarks?
 NLB aims to regularly organize benchmark suites, a collection of tasks, datasets, and metrics around a theme in neural latent variable modeling. For example, NLB'21 will emphasize general population modeling.
 
 ## Citation
-If you use the Neural Latents Benchmark in your work, please cite our NeurIPS paper:
-```
-@inproceedings{PeiYe2021NeuralLatents,
-  title={Neural Latents Benchmark '21: Evaluating latent variable models of neural population activity},
-  author={Felix Pei and Joel Ye and David M. Zoltowski and Anqi Wu and Raeed H. Chowdhury and Hansem Sohn and Joseph E. O’Doherty and Krishna V. Shenoy and Matthew T. Kaufman and Mark Churchland and Mehrdad Jazayeri and Lee E. Miller and Jonathan Pillow and Il Memming Park and Eva L. Dyer and Chethan Pandarinath},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS), Track on Datasets and Benchmarks},
-  year={2021},
-  url={https://arxiv.org/abs/2109.04463}
-}
-```
+If you use the FALCON in your work, please cite our preprint, which is not yet posted.
 
 ## Contact
-The Neural Latents Benchmark is being led by the Systems Neural Engineering Lab in collaboration with labs across several universities. General inquiries should be directed to [Dr. Pandarinath] at `chethan [at] gatech [dot] edu`.
+The FALCON benchmark is being led by the Systems Neural Engineering Lab in collaboration with labs across several universities. General inquiries should be directed to [Dr. Pandarinath] at `chethan [at] gatech [dot] edu`.
