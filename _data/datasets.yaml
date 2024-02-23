@@ -1,19 +1,17 @@
-- title: MC_Maze
-  slug: mcmaze
-  image: assets/maze_fig1.png
-  dandi: "DANDI repos: [Standard](https://gui.dandiarchive.org/#/dandiset/000128), [Large](https://gui.dandiarchive.org/#/dandiset/000138), [Medium](https://gui.dandiarchive.org/#/dandiset/000139), [Small](https://gui.dandiarchive.org/#/dandiset/000140)"
-  notebook: https://github.com/neurallatents/neurallatents.github.io/tree/master/notebooks/mc_maze.ipynb
+- title: H1_7d
+  slug: h1
+  image: assets/h1.png
+  dandi: "DANDI: [TODO]()"
+  notebook: https://github.com/snel-repo/stability-benchmark/blob/main/data_demos/h1.ipynb
   text: |
-    The maze task is a delayed center-out reach task with barriers, resulting in a variety of straight and curved trajectories. Neural activity was recorded from the dorsal premotor and primary motor cortices, and cursor, monkey gaze position, and monkey hand position and velocity are also provided.
+    H1 contains open-loop calibration data collected in one human participant for a reach and grasp BCI experiment.  The participant watches a virtual arm perform a series of movements and attempts to match these movements. The participant cannot execute these movements fully due to high level spinal cord injury. The virtual arm behavior is phasic and pre-specified, such that movement is restricted to one primary degree of freedom is changed at a time, rather than freeform. Neural activity is collected from Utah arrays implanted in the arm and hand areas of motor cortex. This data is provided by Sharlene Flesher and Jen Collinger at University of Pittsburgh.
 
+    **Why H1?** Motor population activity represent a breadth of movement variables that are accessible through linear decoding. This richness has been used in microelectrode-based BCIs to enable high-dimensional arm and hand control was demonstrated over a decade ago, and this signal quality has been a hallmark motivation for microelectrode-based BCIs. Nonetheless, two challenges remain:
 
-    It has been found that M1/PMd activity during such planned, highly-stereotyped movements is predictable from neural population state at movement onset. Though this does not imply the neural system is itself autonomous, predictability makes the dataset useful for evaluating a method’s ability to model autonomous dynamics. In addition to a standard session, we provide 3 recording sessions (standard, large, medium, and small) with varying numbers of trials in order to test how modeling methods scale to limited data.
+    - High dimensional control remains a burden to calibrate, with this particular experimental protocol demanding several minutes of calibration.
+    - The identified decoders do not provide stable control, such that experimenters routinely prepare new decoders in each experimental session despite the burden.
 
-
-    The 4 recording sessions we are releasing are provided by Matt Kaufman, Mark Churchland, and Krishna Shenoy at Stanford University.
-    
-    
-    **Note:** To determine whether a given unit was recorded from PMd or M1, you can use the first digit of the unit ID: for units recorded from PMd, the leading digit is 1, while for units recorded from M1, the leading digit is 2. Due to an error in the dataset conversion process, the electrode indices for units from M1 are incorrect, but you can determine the correct indices by adding 96 to each of the incorrect indices.
+    Providing methods to improve the efficiency of calibration in novel sessions would thus greatly improve the practical viability of high dimensional neuroprosthetic motor control from spikes.
 - title: MC_RTT
   slug: mcrtt
   image: assets/rtt_fig1.png
