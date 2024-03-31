@@ -32,11 +32,10 @@
     As a first step, developing methods to improve the stability of EMG decoding would limit the demand to collect new EMG calibration data, thus greatly improving the practical viability of EMG-based neuroprosthetic motor control. Future endeavors may also aim to develop methods for cross-participant transfer to increase the amount of high-quality EMG data available for BCI applications.
 - title: M2_finger
   slug: m2
-  # image: assets/coming_soon.jpeg
-  image: https://github.com/snel-repo/falcon-challenge/blob/main/data_demos/imgs/m2_task.png
+  image: assets/m2_behavior.png
   dandi: "DANDI: [TODO]()"
   notebook: https://github.com/snel-repo/falcon-challenge/blob/main/data_demos/m2.ipynb
   text: |
     M2 is a dataset of a monkey moving two finger groups to reach targets cued on a screen. The dataset has neural activity from one Utah array, and finger position data as recorded by the state of the finger manipulandum that the monkey's fingers were enclosed in. The monkey has been trained to do this task and the data is collected in the context of a BCI experiment for finger control. The data is provided by the Chestek lab at University of Michigan.
 
-    **Why M2?** Finger control is a critical aspect of dexterous hand function and is a key target for neuroprosthetic control. M2's continuous finger behavior is a non-prehensile behavior, distinguishing it from the other major class of prehensile, grasping behavior (as in M1). Further, recent work, as in the paper where this data was collected and [Shah et al., 23](https://pubmed.ncbi.nlm.nih.gov/37873182/), are identifying linear compositionality in the encoding of different finger behaviors in motor cortex. However, this structure has unclear implications for the stability of decoding finger movements for BCI control.
+    **Why M2?** Finger control is a critical aspect of dexterous hand function and is a key target for neuroprosthetic control. M2's continuous finger behavior is a non-prehensile behavior, distinguishing it from the other major class of prehensile, grasping behavior (as in M1). Further, recent work, as in [Nason et al., 21, where this data was collected](https://pubmed.ncbi.nlm.nih.gov/34499856/) and [Shah et al., 23](https://pubmed.ncbi.nlm.nih.gov/37873182/), are identifying linear compositionality in the encoding of different finger behaviors in motor cortex. However, this structure has unclear implications for the stability of decoding finger movements for BCI control.
