@@ -4,7 +4,7 @@
   dandi: "DANDI: [TODO]()"
   notebook: https://github.com/snel-repo/stability-benchmark/blob/main/data_demos/h1.ipynb
   text: |
-    H1 contains open-loop calibration data collected in one human participant for a reach and grasp BCI experiment.  The participant watches a virtual arm perform a series of movements and attempts to match these movements. The participant cannot execute these movements fully due to high level spinal cord injury. The virtual arm behavior is phasic and pre-specified, such that movement is restricted to one primary degree of freedom is changed at a time, rather than freeform. Neural activity is collected from Utah arrays implanted in the arm and hand areas of motor cortex. This data is provided by Sharlene Flesher and Jen Collinger at University of Pittsburgh.
+    H1 contains open-loop calibration data collected in one human participant for a reach and grasp BCI experiment.  The participant watches a virtual arm perform a series of movements and attempts to match these movements. The participant cannot execute these movements fully due to high level spinal cord injury. The virtual arm behavior is phasic and pre-specified, such that movement is restricted to one primary degree of freedom is changed at a time, rather than freeform. Neural activity is collected from Utah arrays implanted in the arm and hand areas of motor cortex. This data is provided by Rehab Neural Engineering Labs at University of Pittsburgh.
 
     **Why H1?** Motor population activity represent a breadth of movement variables that are accessible through linear decoding. This richness has been used in microelectrode-based BCIs to enable high-dimensional arm and hand control was demonstrated over a decade ago, and this signal quality has been a hallmark motivation for microelectrode-based BCIs. Nonetheless, two challenges remain:
 
@@ -30,12 +30,14 @@
     M1 contains data from a monkey performing a center-out reach-and-grasp task. The dataset comprises neural activity recordings from a rhesus monkey equipped with 6 floating microelectrode arrays, each with 16 channels. Additionally, intramuscular electromyography (EMG) data is captured from 16 locations in the monkey's right hand and upper extremity muscles. These recordings are obtained while the monkey performs tasks involving reaching, grasping, and manipulating four different objects positioned at eight different locations. The objects include various shapes such as cylinders, buttons, spheres, etc., and the monkey is trained to perform specific manipulation actions for each object type. Trials begin with the monkey interacting with a central cylinder, followed by cues indicating which peripheral object to manipulate. Successful trials involve the monkey completing the required interactions with the cued object within specified time frames. This data is provided by Adam Rouse at University of Kansas.
 
     **Why M1?** Successfully working with this dataset requires high-accuracy and consistent EMG decoding performance. EMG decoding is particularly challenging as it requires a model to forecast multiple output variables (here, 16 muscles). Moreover, EMG decoding bears relevance to BCI developments aiming to apply functional electrical stimulation (FES) for inducing movement in a user's limb. However, EMG data is costly and difficult to collect as it requires an invasive implant in the muscles, and many BCI users may not have muscular control that can yield high fidelity EMG recordings.
-    
+
     As a first step, developing methods to improve the stability of EMG decoding would limit the demand to collect new EMG calibration data, thus greatly improving the practical viability of EMG-based neuroprosthetic motor control. Future endeavors may also aim to develop methods for cross-participant transfer to increase the amount of high-quality EMG data available for BCI applications.
 - title: M2_finger
   slug: m2
-  image: assets/coming_soon.jpeg
+  image: assets/m2_behavior.png
   dandi: "DANDI: [TODO]()"
-  notebook: "TUTORIAL: [TODO]()"
+  notebook: https://github.com/snel-repo/falcon-challenge/blob/main/data_demos/m2.ipynb
   text: |
-    M2 will be coming soon!
+    M2 is a dataset of a monkey moving two finger groups to reach targets cued on a screen. The dataset has neural activity from one Utah array, and finger position data as recorded by the state of the finger manipulandum that the monkey's fingers were enclosed in. The monkey has been trained to do this task and the data is collected in the context of a BCI experiment for finger control. The data is provided by the Chestek lab at University of Michigan.
+
+    **Why M2?** Finger control is a critical aspect of dexterous hand function and is a key target for neuroprosthetic control. M2's continuous finger behavior is a non-prehensile behavior, distinguishing it from the other major class of prehensile, grasping behavior (as in M1). Further, recent work, as in [Nason et al., 21, where this data was collected](https://pubmed.ncbi.nlm.nih.gov/34499856/) and [Shah et al., 23](https://pubmed.ncbi.nlm.nih.gov/37873182/), are identifying linear compositionality in the encoding of different finger behaviors in motor cortex. However, this structure has unclear implications for the stability of decoding finger movements for BCI control.
