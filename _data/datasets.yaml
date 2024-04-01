@@ -14,11 +14,13 @@
     Providing methods to improve the efficiency of calibration in novel sessions would thus greatly improve the practical viability of high dimensional neuroprosthetic motor control from spikes.
 - title: H2_writing
   slug: h2
-  image: assets/coming_soon.jpeg
-  dandi: "DANDI: [TODO]()"
-  notebook: "TUTORIAL: [TODO]()"
+  image: assets/h2_figure.png
+  dandi: "[DANDI repo] (https://dandiarchive.org/dandiset/000950)"
+  notebook: "https://github.com/snel-repo/falcon-challenge/blob/main/data_demos/h2.ipynb"
   text: |
-    H2 will be coming soon! 
+    H2 contains data from a human iBCI partipant performing a handwriting task. On each trial, the participant is given a cue to copy by attempting to write each letter in the prompt. Neural activity is collected from two Utah arrays implanted in the hand "knob" area of cortex. This data is provided by Chaofei Fan at Stanford University. 
+
+    **Why H2?** The H2 dataset falls in the domain of brain-to-text BCI, which aim to restore communication capabilities. Decoders for this task will need to be able to accurately predict the intended character as well as determine when that character was intended to be written, as the task is fully self-paced. This task is therefore not amenable to traditional linear decoders. Additionally, decoding may make use of large language models, allowing a new class of recalibration approaches.
 - title: M1_reach
   slug: m1
   image: assets/m1_behavior.png
