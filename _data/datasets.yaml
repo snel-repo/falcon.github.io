@@ -1,21 +1,21 @@
 - title: H1_7d
   slug: h1
   image: assets/h1.png
-  dandi: "DANDI: [TODO]()"
+  dandi: "[DANDI repo](https://dandiarchive.org/dandiset/000954)"
   notebook: https://github.com/snel-repo/stability-benchmark/blob/main/data_demos/h1.ipynb
   text: |
-    H1 contains open-loop calibration data collected in one human participant for a reach and grasp BCI experiment.  The participant watches a virtual arm perform a series of movements and attempts to match these movements. The participant cannot execute these movements fully due to high level spinal cord injury. The virtual arm behavior is phasic and pre-specified, such that movement is restricted to one primary degree of freedom is changed at a time, rather than freeform. Neural activity is collected from Utah arrays implanted in the arm and hand areas of motor cortex. This data is provided by Rehab Neural Engineering Labs at University of Pittsburgh.
+    H1 contains open-loop calibration data collected in one human participant for a reach and grasp BCI experiment.  The participant watches a virtual arm perform a series of movements and attempts to match these movements. The participant cannot execute these movements fully due to high level spinal cord injury, and for these datasets, their native limbs were completely at rest. The virtual arm behavior is phasic and pre-specified, such that movement are split into translation, orientation, and grasp phases. Neural activity is collected from Utah arrays implanted in the arm and hand areas of motor cortex. This data is provided by the Rehab Neural Engineering Labs at University of Pittsburgh.
 
-    **Why H1?** Motor population activity represent a breadth of movement variables that are accessible through linear decoding. This richness has been used in microelectrode-based BCIs to enable high-dimensional arm and hand control was demonstrated over a decade ago, and this signal quality has been a hallmark motivation for microelectrode-based BCIs. Nonetheless, two challenges remain:
+    **Why H1?** Motor population activity represent a breadth of movement variables that are accessible through linear decoding. This richness has been used in microelectrode-based BCIs to enable high-dimensional arm and hand control first demonstrated over a decade ago. The saliency of movement-related information has been a hallmark motivation for microelectrode-based BCIs. Nonetheless, two challenges remain:
 
     - High dimensional control remains a burden to calibrate, with this particular experimental protocol demanding several minutes of calibration.
-    - The identified decoders do not provide stable control, such that experimenters routinely prepare new decoders in each experimental session despite the burden.
+    - The identified decoders do not provide stable control, such that experimenters routinely calibrate new decoders in each experimental session despite the burden.
 
     Providing methods to improve the efficiency of calibration in novel sessions would thus greatly improve the practical viability of high dimensional neuroprosthetic motor control from spikes.
 - title: H2_writing
   slug: h2
   image: assets/coming_soon.jpeg
-  dandi: "DANDI: [TODO]()"
+  dandi: "[DANDI](https://dandiarchive.org/dandiset/000950)"
   notebook: "https://github.com/snel-repo/stability-benchmark/blob/main/data_demos/h2.ipynb"
   text: |
     H2 will be coming soon!
@@ -33,7 +33,7 @@
 - title: M2_finger
   slug: m2
   image: assets/m2_behavior.png
-  dandi: "DANDI: [TODO]()"
+  dandi: "[DANDI repo](https://dandiarchive.org/dandiset/000953)"
   notebook: https://github.com/snel-repo/falcon-challenge/blob/main/data_demos/m2.ipynb
   text: |
     M2 is a dataset of a monkey moving two finger groups to reach targets cued on a screen. The dataset has neural activity from one Utah array, and finger position data as recorded by the state of the finger manipulandum that the monkey's fingers were enclosed in. The monkey has been trained to do this task and the data is collected in the context of a BCI experiment for finger control. The data is provided by the Chestek lab at University of Michigan.
