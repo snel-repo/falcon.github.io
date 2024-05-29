@@ -1,4 +1,4 @@
-- title: H1_7d
+- title: H1
   slug: h1
   image: assets/h1.png
   dandi: "[DANDI repo](https://dandiarchive.org/dandiset/000954)"
@@ -12,7 +12,7 @@
     - The identified decoders do not provide stable control, such that experimenters routinely calibrate new decoders in each experimental session despite the burden.
 
     Providing methods to improve the efficiency of calibration in novel sessions would thus greatly improve the practical viability of high dimensional neuroprosthetic motor control from spikes.
-- title: H2_writing
+- title: H2
   slug: h2
   image: assets/h2_figure.png
   dandi: "[DANDI repo](https://dandiarchive.org/dandiset/000950)"
@@ -21,7 +21,7 @@
     H2 contains data from a human iBCI partipant performing a handwriting task. On each trial, the participant is given a cue to copy by attempting to write each letter in the prompt. Neural activity is collected from two Utah arrays implanted in the hand "knob" area of cortex. This data is provided by Chaofei Fan at Stanford University. 
 
     **Why H2?** The H2 dataset falls in the domain of brain-to-text BCI, which aim to restore communication capabilities. Decoders for this task will need to be able to accurately predict the intended character as well as determine when that character was intended to be written, as the task is fully self-paced. This task is therefore not amenable to traditional linear decoders. Additionally, decoding may make use of large language models, allowing a new class of recalibration approaches.
-- title: M1_reach
+- title: M1
   slug: m1
   image: assets/m1_behavior.png
   dandi: "[DANDI repo](https://dandiarchive.org/dandiset/000941)"
@@ -32,7 +32,7 @@
     **Why M1?** Successfully working with this dataset requires high-accuracy and consistent EMG decoding performance. EMG decoding is particularly challenging as it requires a model to forecast multiple output variables (here, 16 muscles). Moreover, EMG decoding bears relevance to BCI developments aiming to apply functional electrical stimulation (FES) for inducing movement in a user's limb. However, EMG data is costly and difficult to collect as it requires an invasive implant in the muscles, and many BCI users may not have muscular control that can yield high fidelity EMG recordings.
 
     As a first step, developing methods to improve the stability of EMG decoding would limit the demand to collect new EMG calibration data, thus greatly improving the practical viability of EMG-based neuroprosthetic motor control. Future endeavors may also aim to develop methods for cross-participant transfer to increase the amount of high-quality EMG data available for BCI applications.
-- title: M2_finger
+- title: M2
   slug: m2
   image: assets/m2_behavior.png
   dandi: "[DANDI repo](https://dandiarchive.org/dandiset/000953)"
@@ -41,3 +41,12 @@
     M2 is a dataset of a monkey moving two finger groups to reach targets cued on a screen. The dataset has neural activity from one Utah array, and finger position data as recorded by the state of the finger manipulandum that the monkey's fingers were enclosed in. The monkey has been trained to do this task and the data is collected in the context of a BCI experiment for finger control. The data is provided by the Chestek lab at University of Michigan.
 
     **Why M2?** Finger control is a critical aspect of dexterous hand function and is a key target for neuroprosthetic control. M2's continuous finger behavior is a non-prehensile behavior, distinguishing it from the other major class of prehensile, grasping behavior (as in M1). Further, recent work, as in [Nason et al., 21, where this data was collected](https://pubmed.ncbi.nlm.nih.gov/34499856/) and [Shah et al., 23](https://pubmed.ncbi.nlm.nih.gov/37873182/), are identifying linear compositionality in the encoding of different finger behaviors in motor cortex. However, this structure has unclear implications for the stability of decoding finger movements for BCI control.
+- title: B1
+  slug: b1
+  image: assets/b1.png
+  dandi: "DANDI repo coming soon"
+  notebook: "Notebook coming soon"
+  text: |
+    B1 contains data from zebra finch songbirds vocalizing in a naturalistic setting. The dataset consists of neural activity recorded from premotor and motor brain regions, collected with Neuropixels 1.0 probes, as well as simultaneous audio recordings of the vocalizations. The songs are annotated with template-matching software to identify repeated syllables and motifs. This data is provided by the Translational Neuroengineering Lab and the Gentner Lab, both at UC San Diego. 
+
+    **Why B1?** B1 is unique in that it is the only dataset in the FALCON benchmark recorded using Neuropixels probes, which may exhibit nonstationarities of different nature than the Utah and microelectrode arrays used in the other datasets. Also, because songbird vocalization parallels human speech ([Anumanchipalli et al., 19](https://www.nature.com/articles/s41586-019-1119-1)), B1 enables evaluation of iBCI decoding methods that may be adapted for human speech decoding.
