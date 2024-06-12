@@ -45,7 +45,7 @@
   slug: b1
   image: assets/b1.png
   dandi: "[DANDI repo](https://dandiarchive.org/dandiset/001046)"
-  notebook: "Notebook coming soon"
+  notebook: https://github.com/snel-repo/falcon-challenge/blob/main/data_demos/b1.ipynb
   text: |
     B1 contains data from zebra finch songbirds vocalizing in a naturalistic setting. The dataset consists of neural activity recorded from premotor and motor brain regions, collected with Neuropixels 1.0 probes, as well as simultaneous audio recordings of the vocalizations. The songs are annotated with template-matching software to identify repeated syllables and motifs. This data is provided by the Translational Neuroengineering Lab and the Gentner Lab, both at UC San Diego. 
 
