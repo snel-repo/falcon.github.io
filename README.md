@@ -14,10 +14,10 @@ We propose FALCON as a benchmark to standardize the evaluation of adaptation alg
 
 ## FAQ
 ### How do I submit a model to the benchmark?
-We are hosting our challenge on [EvalAI](), a platform for evaluating machine learning models. On the platform, you can choose to make private or public submissions to any or all of the individual datasets.
+We are hosting our challenge on [EvalAI](https://eval.ai/web/challenges/challenge-page/2319/overview), a platform for evaluating machine learning models. On the platform, you can choose to make private or public submissions to any or all of the individual datasets.
 
 ### Can I view the leaderboard without submitting?
-Yes, the full leaderboard will be available on [EvalAI](), and EvalAI is also synced with [Papers With Code](https://paperswithcode.com/). Model open-sourcing is encouraged and thus may be available through the leaderboard.
+Yes, the full leaderboard will be available on [EvalAI](https://eval.ai/web/challenges/challenge-page/2319/overview), and EvalAI is also synced with [Papers With Code](https://paperswithcode.com/). Model open-sourcing is encouraged and thus may be available through the leaderboard.
 
 ### Is there a deadline?
 The benchmark and its leaderboard can be submitted to indefinitely on EvalAI as a resource for the community. 
