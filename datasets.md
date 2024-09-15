@@ -9,7 +9,9 @@ We overview the datasets released through the FALCON challenge. Technical detail
 dataset itself are provided in the linked DANDI repository and the associated paper. In FALCON, we
 release a collection of five datasets spanning a variety of tasks, subjects, and brain areas. Though in our
 benchmark we are only evaluating a specific set of metrics for each dataset, we encourage the use of
-these datasets beyond the scope of our current competition.
+these datasets beyond FALCON's stated scope.
+
+Note: The FALCON manuscript references the release of additional broadband data for B1 and M2, as well as a second subject's data (M1-B) for M1. These are being prepared and will be released in the coming months.
 
 <hr>
 
