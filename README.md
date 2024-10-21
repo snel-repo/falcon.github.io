@@ -7,7 +7,7 @@ Decoding user intention from neural data provides a potential avenue to restore 
 
 We propose FALCON as a benchmark to standardize the evaluation of adaptation algorithms for iBCIs. For 5 different decoding tasks spanning the current use of iBCIs, FALCON provides paired neural and behavioral data collected over an early period of experiments and evaluates decoders on new days. In the iBCI literature, these paired data would be termed "calibration" data as they are used to train decoders. Since decoding on new days is ill-posed without any data, but calibration data on new days should be minimized, we frame decoding on new days as a few-shot adaptation problem, and provide a greatly reduced amount of calibration data on new days.
 
-<!-- - [Read about FALCON in our technical paper](). -->
+- [Read about FALCON in our technical paper](https://www.biorxiv.org/content/10.1101/2024.09.15.613126v1).
 <!-- - [Join the mailing list for updates](https://forms.gle/o7BejfJ2S9hqJpM28). -->
 <!-- - [See our Cosyne '21 announcement](https://www.youtube.com/watch?v=o7dvFLHb5AY). -->
 <!-- - [Join our Slack workspace](https://neurallatents.slack.com). Please email `fpei6 [at] gatech [dot] edu` for an invite link. -->
@@ -20,7 +20,7 @@ We are hosting our challenge on [EvalAI](https://eval.ai/web/challenges/challeng
 Yes, the full leaderboard will be available on [EvalAI](https://eval.ai/web/challenges/challenge-page/2319/overview), and EvalAI is also synced with [Papers With Code](https://paperswithcode.com/). Model open-sourcing is encouraged and thus may be available through the leaderboard.
 
 ### Is there a deadline?
-The benchmark and its leaderboard can be submitted to indefinitely on EvalAI as a resource for the community. 
+The benchmark and its leaderboard can be submitted to indefinitely on EvalAI as a resource for the community.
 
 ## Citation
 If you use the FALCON in your work, please cite our preprint, which is not yet posted.
