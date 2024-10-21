@@ -24,7 +24,7 @@
 - title: M1
   slug: m1
   image: assets/m1_behavior.png
-  dandi: "[DANDI repo](https://dandiarchive.org/dandiset/000941)"
+  dandi: "[M1-A DANDI repo](https://dandiarchive.org/dandiset/000941) | [M1-B DANDI repo](https://dandiarchive.org/dandiset/001209)"
   notebook: https://github.com/snel-repo/falcon-challenge/blob/main/data_demos/m1.ipynb
   text: |
     M1 contains data from a monkey performing a center-out reach-and-grasp task. The dataset comprises neural activity recordings from a rhesus monkey equipped with 6 floating microelectrode arrays, each with 16 channels. Additionally, intramuscular electromyography (EMG) data is captured from 16 locations in the monkey's right hand and upper extremity muscles. These recordings are obtained while the monkey performs tasks involving reaching, grasping, and manipulating four different objects positioned at eight different locations. The objects include various shapes such as cylinders, buttons, spheres, etc., and the monkey is trained to perform specific manipulation actions for each object type. Trials begin with the monkey interacting with a central cylinder, followed by cues indicating which peripheral object to manipulate. Successful trials involve the monkey completing the required interactions with the cued object within specified time frames. This data is provided by Adam Rouse at University of Kansas.
